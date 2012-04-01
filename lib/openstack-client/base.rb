@@ -51,6 +51,8 @@ class Openstack::Client::Resource
   def get
     self.loaded = true
 
+    p 'passsss'
+
     res = self.manager.get(self.id)
     self.info = res.info
     self.add_details(self.info)

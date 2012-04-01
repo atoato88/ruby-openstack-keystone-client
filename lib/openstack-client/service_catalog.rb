@@ -13,7 +13,7 @@ class Openstack::Client::ServiceCatalog
     self.catalog = resource_dict
   end
 
-  # Fetch token details fron service catalog
+  # Fetch token details from service catalog
   # @return [Hash] token
   def token
     unless defined?(@token)
